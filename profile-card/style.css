@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #242628;
+  --white-color: #ffffff;
+  --pick-color: #f2726a;
+}
+body {
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(to right, #00853e, #50c878);
+}
+.profile-card {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card__item {
+  width: 300px;
+  height: 440px;
+  background-color: var(--primary-color);
+  border-radius: 10px;
+  text-align: center;
+  margin-right: 60px;
+  overflow: hidden;
+}
+.card__item:last-child {
+  margin-right: 0;
+}
+.avatar {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto;
+  transform: translateY(20px);
+  border-radius: 50%;
+  border: 2px var(--pick-color) solid;
+  overflow: hidden; /* anh k an vs div */
+  cursor: pointer;
+  transition: 0.4s;
+}
+.avatar__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.avatar:hover {
+  width: 100%;
+  height: 100%;
+  border: unset;
+  border-radius: unset;
+  transform: unset;
+  transition-delay: 0.2s;
+}
+.title {
+  color: var(--white-color);
+  font-size: 26px;
+  margin-top: 40px;
+}
+.subtitle {
+  font-size: 18px;
+  color: var(--pick-color); /* margin: 10px 0; */
+}
+.social-media {
+  margin: 40px 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+.social-media__item {
+  text-decoration: none;
+  font-size: 24px;
+  color: var(--white-color);
+  cursor: pointer;
+  transition: 0.4s;
+}
+.social-media__item:hover {
+  color: var(--pick-color);
+}
+.contact-btn {
+  border: 1px var(--pick-color);
+  border-style: solid;
+  border-radius: 8px;
+  font-size: 16px;
+  padding: 10px 16px;
+  color: var(--white-color);
+  background-color: var(--primary-color);
+  cursor: pointer;
+  transition: 0.4s;
+}
+.contact-btn:hover {
+  background-color: var(--pick-color);
+}
